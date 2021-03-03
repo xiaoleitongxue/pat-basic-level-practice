@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.16)
+project(PAT C)
+
+set(CMAKE_C_STANDARD 99)
+
+add_executable(PAT main.c pat.c pat.h pat1003.c pat1004.c pat1005.c pat1006.c pat1008.c pat1009.c pat1010.c pat1011.c pat1012.c pat1016.c)
+add_executable(pat1001 pat1001.c)
+add_executable(pat1002 pat1002.c)
+add_executable(pat1003 pat1003.c)
+add_executable(pat1004 pat1004.c)
+add_executable(pat1005 pat1005.c)
+add_executable(pat1006 pat1006.c)
+add_executable(pat1008 pat1008.c)
+add_executable(pat1009 pat1009.c)
+add_executable(pat1010 pat1010.c)
+add_executable(pat1011 pat1011.c)
+add_executable(pat1012 pat1012.c)
+add_executable(pat1016 pat1016.c)
