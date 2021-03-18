@@ -63,13 +63,14 @@ int main(){
         result[count++]=currentFigure;
         sum = sum / 10;
     }
-
+    //当sum超过一位数时
     if(count>1){
         for(int i=count-1;i>0;--i){
             printf("%s ",figureHan[result[i]]);
         }
         printf("%s",figureHan[result[0]]);
     }
+    //当sum只有一位数时
     else{
         printf("%s",figureHan[result[0]]);
     }

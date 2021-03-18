@@ -26,37 +26,20 @@ int main(void){
     while(i<numsLength-1){
         dishu = nums[i];
         zhishu = nums[++i];
-        if(dishu==0){
-            if(zhishu==0){
-                dishu =0;
-                zhishu = 0;
-                result[j]=dishu;
-                result[++j]=zhishu;
-                ++j;
-            }else{
-                dishu =0;
-                zhishu = zhishu -1;
-                result[j]=dishu;
-                result[++j]=zhishu;
-                ++j;
-            }
+        if(dishu== 0 && zhishu == 0){
+            result[j]=dishu;
+            result[++j]=zhishu;
+            ++j;
         }
-        else{
-            if(zhishu==0){
-
-            }
-            else{
-                dishu = dishu * zhishu;
-                zhishu = zhishu-1;
-                result[j]=dishu;
-                result[++j]=zhishu;
-                ++j;
-            }
+        else if(dishu!=0 && zhishu !=0){
+            dishu = dishu * zhishu;
+            zhishu = zhishu-1;
+            result[j]=dishu;
+            result[++j]=zhishu;
+            ++j;
         }
         ++i;
     }
-
-
 
     for(i=0;i<j-1;++i){
         printf("%d ",result[i]);

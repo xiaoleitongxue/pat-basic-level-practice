@@ -47,24 +47,13 @@ RM = C:\Users\lilei\app\CLion-2020.1.3.win\bin\cmake\win\bin\cmake.exe -E remove
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\lilei\Documents\source\repos\PAT
+CMAKE_SOURCE_DIR = C:\Users\lilei\Documents\source\repos\pat-basic-level-practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\lilei\Documents\source\repos\PAT\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\lilei\Documents\source\repos\pat-basic-level-practice\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\lilei\app\CLion-2020.1.3.win\bin\cmake\win\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -77,11 +66,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	C:\Users\lilei\app\CLion-2020.1.3.win\bin\cmake\win\bin\cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lilei\Documents\source\repos\PAT\cmake-build-debug\CMakeFiles C:\Users\lilei\Documents\source\repos\PAT\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lilei\Documents\source\repos\pat-basic-level-practice\cmake-build-debug\CMakeFiles C:\Users\lilei\Documents\source\repos\pat-basic-level-practice\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lilei\Documents\source\repos\PAT\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lilei\Documents\source\repos\pat-basic-level-practice\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,17 +110,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named PAT
+# Target rules for targets named pat1007
 
 # Build rule for target.
-PAT: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 PAT
-.PHONY : PAT
+pat1007: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 pat1007
+.PHONY : pat1007
 
 # fast build rule for target.
-PAT/fast:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/build
-.PHONY : PAT/fast
+pat1007/fast:
+	$(MAKE) -f CMakeFiles\pat1007.dir\build.make CMakeFiles/pat1007.dir/build
+.PHONY : pat1007/fast
+
+#=============================================================================
+# Target rules for targets named pat_basic_level_practice
+
+# Build rule for target.
+pat_basic_level_practice: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 pat_basic_level_practice
+.PHONY : pat_basic_level_practice
+
+# fast build rule for target.
+pat_basic_level_practice/fast:
+	$(MAKE) -f CMakeFiles\pat_basic_level_practice.dir\build.make CMakeFiles/pat_basic_level_practice.dir/build
+.PHONY : pat_basic_level_practice/fast
 
 #=============================================================================
 # Target rules for targets named pat1001
@@ -136,147 +149,30 @@ pat1001/fast:
 .PHONY : pat1001/fast
 
 #=============================================================================
-# Target rules for targets named pat1002
+# Target rules for targets named pat1013
 
 # Build rule for target.
-pat1002: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 pat1002
-.PHONY : pat1002
+pat1013: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 pat1013
+.PHONY : pat1013
 
 # fast build rule for target.
-pat1002/fast:
-	$(MAKE) -f CMakeFiles\pat1002.dir\build.make CMakeFiles/pat1002.dir/build
-.PHONY : pat1002/fast
+pat1013/fast:
+	$(MAKE) -f CMakeFiles\pat1013.dir\build.make CMakeFiles/pat1013.dir/build
+.PHONY : pat1013/fast
 
 #=============================================================================
-# Target rules for targets named pat1003
+# Target rules for targets named pat1014
 
 # Build rule for target.
-pat1003: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 pat1003
-.PHONY : pat1003
+pat1014: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 pat1014
+.PHONY : pat1014
 
 # fast build rule for target.
-pat1003/fast:
-	$(MAKE) -f CMakeFiles\pat1003.dir\build.make CMakeFiles/pat1003.dir/build
-.PHONY : pat1003/fast
-
-#=============================================================================
-# Target rules for targets named pat1004
-
-# Build rule for target.
-pat1004: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 pat1004
-.PHONY : pat1004
-
-# fast build rule for target.
-pat1004/fast:
-	$(MAKE) -f CMakeFiles\pat1004.dir\build.make CMakeFiles/pat1004.dir/build
-.PHONY : pat1004/fast
-
-#=============================================================================
-# Target rules for targets named pat1005
-
-# Build rule for target.
-pat1005: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 pat1005
-.PHONY : pat1005
-
-# fast build rule for target.
-pat1005/fast:
-	$(MAKE) -f CMakeFiles\pat1005.dir\build.make CMakeFiles/pat1005.dir/build
-.PHONY : pat1005/fast
-
-#=============================================================================
-# Target rules for targets named pat1006
-
-# Build rule for target.
-pat1006: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 pat1006
-.PHONY : pat1006
-
-# fast build rule for target.
-pat1006/fast:
-	$(MAKE) -f CMakeFiles\pat1006.dir\build.make CMakeFiles/pat1006.dir/build
-.PHONY : pat1006/fast
-
-#=============================================================================
-# Target rules for targets named pat1008
-
-# Build rule for target.
-pat1008: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 pat1008
-.PHONY : pat1008
-
-# fast build rule for target.
-pat1008/fast:
-	$(MAKE) -f CMakeFiles\pat1008.dir\build.make CMakeFiles/pat1008.dir/build
-.PHONY : pat1008/fast
-
-#=============================================================================
-# Target rules for targets named pat1009
-
-# Build rule for target.
-pat1009: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 pat1009
-.PHONY : pat1009
-
-# fast build rule for target.
-pat1009/fast:
-	$(MAKE) -f CMakeFiles\pat1009.dir\build.make CMakeFiles/pat1009.dir/build
-.PHONY : pat1009/fast
-
-#=============================================================================
-# Target rules for targets named pat1010
-
-# Build rule for target.
-pat1010: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 pat1010
-.PHONY : pat1010
-
-# fast build rule for target.
-pat1010/fast:
-	$(MAKE) -f CMakeFiles\pat1010.dir\build.make CMakeFiles/pat1010.dir/build
-.PHONY : pat1010/fast
-
-#=============================================================================
-# Target rules for targets named pat1011
-
-# Build rule for target.
-pat1011: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 pat1011
-.PHONY : pat1011
-
-# fast build rule for target.
-pat1011/fast:
-	$(MAKE) -f CMakeFiles\pat1011.dir\build.make CMakeFiles/pat1011.dir/build
-.PHONY : pat1011/fast
-
-#=============================================================================
-# Target rules for targets named pat1012
-
-# Build rule for target.
-pat1012: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 pat1012
-.PHONY : pat1012
-
-# fast build rule for target.
-pat1012/fast:
-	$(MAKE) -f CMakeFiles\pat1012.dir\build.make CMakeFiles/pat1012.dir/build
-.PHONY : pat1012/fast
-
-#=============================================================================
-# Target rules for targets named pat1016
-
-# Build rule for target.
-pat1016: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 pat1016
-.PHONY : pat1016
-
-# fast build rule for target.
-pat1016/fast:
-	$(MAKE) -f CMakeFiles\pat1016.dir\build.make CMakeFiles/pat1016.dir/build
-.PHONY : pat1016/fast
+pat1014/fast:
+	$(MAKE) -f CMakeFiles\pat1014.dir\build.make CMakeFiles/pat1014.dir/build
+.PHONY : pat1014/fast
 
 main.obj: main.c.obj
 
@@ -284,7 +180,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/main.c.obj
+	$(MAKE) -f CMakeFiles\pat_basic_level_practice.dir\build.make CMakeFiles/pat_basic_level_practice.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -293,7 +189,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/main.c.i
+	$(MAKE) -f CMakeFiles\pat_basic_level_practice.dir\build.make CMakeFiles/pat_basic_level_practice.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -302,35 +198,8 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/main.c.s
+	$(MAKE) -f CMakeFiles\pat_basic_level_practice.dir\build.make CMakeFiles/pat_basic_level_practice.dir/main.c.s
 .PHONY : main.c.s
-
-pat.obj: pat.c.obj
-
-.PHONY : pat.obj
-
-# target to build an object file
-pat.c.obj:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat.c.obj
-.PHONY : pat.c.obj
-
-pat.i: pat.c.i
-
-.PHONY : pat.i
-
-# target to preprocess a source file
-pat.c.i:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat.c.i
-.PHONY : pat.c.i
-
-pat.s: pat.c.s
-
-.PHONY : pat.s
-
-# target to generate assembly for a file
-pat.c.s:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat.c.s
-.PHONY : pat.c.s
 
 pat1001.obj: pat1001.c.obj
 
@@ -359,332 +228,86 @@ pat1001.c.s:
 	$(MAKE) -f CMakeFiles\pat1001.dir\build.make CMakeFiles/pat1001.dir/pat1001.c.s
 .PHONY : pat1001.c.s
 
-pat1002.obj: pat1002.c.obj
+pat1007.obj: pat1007.c.obj
 
-.PHONY : pat1002.obj
-
-# target to build an object file
-pat1002.c.obj:
-	$(MAKE) -f CMakeFiles\pat1002.dir\build.make CMakeFiles/pat1002.dir/pat1002.c.obj
-.PHONY : pat1002.c.obj
-
-pat1002.i: pat1002.c.i
-
-.PHONY : pat1002.i
-
-# target to preprocess a source file
-pat1002.c.i:
-	$(MAKE) -f CMakeFiles\pat1002.dir\build.make CMakeFiles/pat1002.dir/pat1002.c.i
-.PHONY : pat1002.c.i
-
-pat1002.s: pat1002.c.s
-
-.PHONY : pat1002.s
-
-# target to generate assembly for a file
-pat1002.c.s:
-	$(MAKE) -f CMakeFiles\pat1002.dir\build.make CMakeFiles/pat1002.dir/pat1002.c.s
-.PHONY : pat1002.c.s
-
-pat1003.obj: pat1003.c.obj
-
-.PHONY : pat1003.obj
+.PHONY : pat1007.obj
 
 # target to build an object file
-pat1003.c.obj:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1003.c.obj
-	$(MAKE) -f CMakeFiles\pat1003.dir\build.make CMakeFiles/pat1003.dir/pat1003.c.obj
-.PHONY : pat1003.c.obj
+pat1007.c.obj:
+	$(MAKE) -f CMakeFiles\pat1007.dir\build.make CMakeFiles/pat1007.dir/pat1007.c.obj
+.PHONY : pat1007.c.obj
 
-pat1003.i: pat1003.c.i
+pat1007.i: pat1007.c.i
 
-.PHONY : pat1003.i
+.PHONY : pat1007.i
 
 # target to preprocess a source file
-pat1003.c.i:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1003.c.i
-	$(MAKE) -f CMakeFiles\pat1003.dir\build.make CMakeFiles/pat1003.dir/pat1003.c.i
-.PHONY : pat1003.c.i
+pat1007.c.i:
+	$(MAKE) -f CMakeFiles\pat1007.dir\build.make CMakeFiles/pat1007.dir/pat1007.c.i
+.PHONY : pat1007.c.i
 
-pat1003.s: pat1003.c.s
+pat1007.s: pat1007.c.s
 
-.PHONY : pat1003.s
+.PHONY : pat1007.s
 
 # target to generate assembly for a file
-pat1003.c.s:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1003.c.s
-	$(MAKE) -f CMakeFiles\pat1003.dir\build.make CMakeFiles/pat1003.dir/pat1003.c.s
-.PHONY : pat1003.c.s
+pat1007.c.s:
+	$(MAKE) -f CMakeFiles\pat1007.dir\build.make CMakeFiles/pat1007.dir/pat1007.c.s
+.PHONY : pat1007.c.s
 
-pat1004.obj: pat1004.c.obj
+pat1013.obj: pat1013.c.obj
 
-.PHONY : pat1004.obj
+.PHONY : pat1013.obj
 
 # target to build an object file
-pat1004.c.obj:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1004.c.obj
-	$(MAKE) -f CMakeFiles\pat1004.dir\build.make CMakeFiles/pat1004.dir/pat1004.c.obj
-.PHONY : pat1004.c.obj
+pat1013.c.obj:
+	$(MAKE) -f CMakeFiles\pat1013.dir\build.make CMakeFiles/pat1013.dir/pat1013.c.obj
+.PHONY : pat1013.c.obj
 
-pat1004.i: pat1004.c.i
+pat1013.i: pat1013.c.i
 
-.PHONY : pat1004.i
+.PHONY : pat1013.i
 
 # target to preprocess a source file
-pat1004.c.i:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1004.c.i
-	$(MAKE) -f CMakeFiles\pat1004.dir\build.make CMakeFiles/pat1004.dir/pat1004.c.i
-.PHONY : pat1004.c.i
+pat1013.c.i:
+	$(MAKE) -f CMakeFiles\pat1013.dir\build.make CMakeFiles/pat1013.dir/pat1013.c.i
+.PHONY : pat1013.c.i
 
-pat1004.s: pat1004.c.s
+pat1013.s: pat1013.c.s
 
-.PHONY : pat1004.s
+.PHONY : pat1013.s
 
 # target to generate assembly for a file
-pat1004.c.s:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1004.c.s
-	$(MAKE) -f CMakeFiles\pat1004.dir\build.make CMakeFiles/pat1004.dir/pat1004.c.s
-.PHONY : pat1004.c.s
+pat1013.c.s:
+	$(MAKE) -f CMakeFiles\pat1013.dir\build.make CMakeFiles/pat1013.dir/pat1013.c.s
+.PHONY : pat1013.c.s
 
-pat1005.obj: pat1005.c.obj
+pat1014.obj: pat1014.c.obj
 
-.PHONY : pat1005.obj
+.PHONY : pat1014.obj
 
 # target to build an object file
-pat1005.c.obj:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1005.c.obj
-	$(MAKE) -f CMakeFiles\pat1005.dir\build.make CMakeFiles/pat1005.dir/pat1005.c.obj
-.PHONY : pat1005.c.obj
+pat1014.c.obj:
+	$(MAKE) -f CMakeFiles\pat1014.dir\build.make CMakeFiles/pat1014.dir/pat1014.c.obj
+.PHONY : pat1014.c.obj
 
-pat1005.i: pat1005.c.i
+pat1014.i: pat1014.c.i
 
-.PHONY : pat1005.i
-
-# target to preprocess a source file
-pat1005.c.i:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1005.c.i
-	$(MAKE) -f CMakeFiles\pat1005.dir\build.make CMakeFiles/pat1005.dir/pat1005.c.i
-.PHONY : pat1005.c.i
-
-pat1005.s: pat1005.c.s
-
-.PHONY : pat1005.s
-
-# target to generate assembly for a file
-pat1005.c.s:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1005.c.s
-	$(MAKE) -f CMakeFiles\pat1005.dir\build.make CMakeFiles/pat1005.dir/pat1005.c.s
-.PHONY : pat1005.c.s
-
-pat1006.obj: pat1006.c.obj
-
-.PHONY : pat1006.obj
-
-# target to build an object file
-pat1006.c.obj:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1006.c.obj
-	$(MAKE) -f CMakeFiles\pat1006.dir\build.make CMakeFiles/pat1006.dir/pat1006.c.obj
-.PHONY : pat1006.c.obj
-
-pat1006.i: pat1006.c.i
-
-.PHONY : pat1006.i
+.PHONY : pat1014.i
 
 # target to preprocess a source file
-pat1006.c.i:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1006.c.i
-	$(MAKE) -f CMakeFiles\pat1006.dir\build.make CMakeFiles/pat1006.dir/pat1006.c.i
-.PHONY : pat1006.c.i
+pat1014.c.i:
+	$(MAKE) -f CMakeFiles\pat1014.dir\build.make CMakeFiles/pat1014.dir/pat1014.c.i
+.PHONY : pat1014.c.i
 
-pat1006.s: pat1006.c.s
+pat1014.s: pat1014.c.s
 
-.PHONY : pat1006.s
-
-# target to generate assembly for a file
-pat1006.c.s:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1006.c.s
-	$(MAKE) -f CMakeFiles\pat1006.dir\build.make CMakeFiles/pat1006.dir/pat1006.c.s
-.PHONY : pat1006.c.s
-
-pat1008.obj: pat1008.c.obj
-
-.PHONY : pat1008.obj
-
-# target to build an object file
-pat1008.c.obj:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1008.c.obj
-	$(MAKE) -f CMakeFiles\pat1008.dir\build.make CMakeFiles/pat1008.dir/pat1008.c.obj
-.PHONY : pat1008.c.obj
-
-pat1008.i: pat1008.c.i
-
-.PHONY : pat1008.i
-
-# target to preprocess a source file
-pat1008.c.i:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1008.c.i
-	$(MAKE) -f CMakeFiles\pat1008.dir\build.make CMakeFiles/pat1008.dir/pat1008.c.i
-.PHONY : pat1008.c.i
-
-pat1008.s: pat1008.c.s
-
-.PHONY : pat1008.s
+.PHONY : pat1014.s
 
 # target to generate assembly for a file
-pat1008.c.s:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1008.c.s
-	$(MAKE) -f CMakeFiles\pat1008.dir\build.make CMakeFiles/pat1008.dir/pat1008.c.s
-.PHONY : pat1008.c.s
-
-pat1009.obj: pat1009.c.obj
-
-.PHONY : pat1009.obj
-
-# target to build an object file
-pat1009.c.obj:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1009.c.obj
-	$(MAKE) -f CMakeFiles\pat1009.dir\build.make CMakeFiles/pat1009.dir/pat1009.c.obj
-.PHONY : pat1009.c.obj
-
-pat1009.i: pat1009.c.i
-
-.PHONY : pat1009.i
-
-# target to preprocess a source file
-pat1009.c.i:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1009.c.i
-	$(MAKE) -f CMakeFiles\pat1009.dir\build.make CMakeFiles/pat1009.dir/pat1009.c.i
-.PHONY : pat1009.c.i
-
-pat1009.s: pat1009.c.s
-
-.PHONY : pat1009.s
-
-# target to generate assembly for a file
-pat1009.c.s:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1009.c.s
-	$(MAKE) -f CMakeFiles\pat1009.dir\build.make CMakeFiles/pat1009.dir/pat1009.c.s
-.PHONY : pat1009.c.s
-
-pat1010.obj: pat1010.c.obj
-
-.PHONY : pat1010.obj
-
-# target to build an object file
-pat1010.c.obj:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1010.c.obj
-	$(MAKE) -f CMakeFiles\pat1010.dir\build.make CMakeFiles/pat1010.dir/pat1010.c.obj
-.PHONY : pat1010.c.obj
-
-pat1010.i: pat1010.c.i
-
-.PHONY : pat1010.i
-
-# target to preprocess a source file
-pat1010.c.i:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1010.c.i
-	$(MAKE) -f CMakeFiles\pat1010.dir\build.make CMakeFiles/pat1010.dir/pat1010.c.i
-.PHONY : pat1010.c.i
-
-pat1010.s: pat1010.c.s
-
-.PHONY : pat1010.s
-
-# target to generate assembly for a file
-pat1010.c.s:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1010.c.s
-	$(MAKE) -f CMakeFiles\pat1010.dir\build.make CMakeFiles/pat1010.dir/pat1010.c.s
-.PHONY : pat1010.c.s
-
-pat1011.obj: pat1011.c.obj
-
-.PHONY : pat1011.obj
-
-# target to build an object file
-pat1011.c.obj:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1011.c.obj
-	$(MAKE) -f CMakeFiles\pat1011.dir\build.make CMakeFiles/pat1011.dir/pat1011.c.obj
-.PHONY : pat1011.c.obj
-
-pat1011.i: pat1011.c.i
-
-.PHONY : pat1011.i
-
-# target to preprocess a source file
-pat1011.c.i:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1011.c.i
-	$(MAKE) -f CMakeFiles\pat1011.dir\build.make CMakeFiles/pat1011.dir/pat1011.c.i
-.PHONY : pat1011.c.i
-
-pat1011.s: pat1011.c.s
-
-.PHONY : pat1011.s
-
-# target to generate assembly for a file
-pat1011.c.s:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1011.c.s
-	$(MAKE) -f CMakeFiles\pat1011.dir\build.make CMakeFiles/pat1011.dir/pat1011.c.s
-.PHONY : pat1011.c.s
-
-pat1012.obj: pat1012.c.obj
-
-.PHONY : pat1012.obj
-
-# target to build an object file
-pat1012.c.obj:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1012.c.obj
-	$(MAKE) -f CMakeFiles\pat1012.dir\build.make CMakeFiles/pat1012.dir/pat1012.c.obj
-.PHONY : pat1012.c.obj
-
-pat1012.i: pat1012.c.i
-
-.PHONY : pat1012.i
-
-# target to preprocess a source file
-pat1012.c.i:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1012.c.i
-	$(MAKE) -f CMakeFiles\pat1012.dir\build.make CMakeFiles/pat1012.dir/pat1012.c.i
-.PHONY : pat1012.c.i
-
-pat1012.s: pat1012.c.s
-
-.PHONY : pat1012.s
-
-# target to generate assembly for a file
-pat1012.c.s:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1012.c.s
-	$(MAKE) -f CMakeFiles\pat1012.dir\build.make CMakeFiles/pat1012.dir/pat1012.c.s
-.PHONY : pat1012.c.s
-
-pat1016.obj: pat1016.c.obj
-
-.PHONY : pat1016.obj
-
-# target to build an object file
-pat1016.c.obj:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1016.c.obj
-	$(MAKE) -f CMakeFiles\pat1016.dir\build.make CMakeFiles/pat1016.dir/pat1016.c.obj
-.PHONY : pat1016.c.obj
-
-pat1016.i: pat1016.c.i
-
-.PHONY : pat1016.i
-
-# target to preprocess a source file
-pat1016.c.i:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1016.c.i
-	$(MAKE) -f CMakeFiles\pat1016.dir\build.make CMakeFiles/pat1016.dir/pat1016.c.i
-.PHONY : pat1016.c.i
-
-pat1016.s: pat1016.c.s
-
-.PHONY : pat1016.s
-
-# target to generate assembly for a file
-pat1016.c.s:
-	$(MAKE) -f CMakeFiles\PAT.dir\build.make CMakeFiles/PAT.dir/pat1016.c.s
-	$(MAKE) -f CMakeFiles\pat1016.dir\build.make CMakeFiles/pat1016.dir/pat1016.c.s
-.PHONY : pat1016.c.s
+pat1014.c.s:
+	$(MAKE) -f CMakeFiles\pat1014.dir\build.make CMakeFiles/pat1014.dir/pat1014.c.s
+.PHONY : pat1014.c.s
 
 # Help Target
 help:
@@ -692,63 +315,28 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... PAT
-	@echo ... pat1001
-	@echo ... pat1002
-	@echo ... pat1003
-	@echo ... pat1004
-	@echo ... pat1005
-	@echo ... rebuild_cache
-	@echo ... pat1006
-	@echo ... pat1008
-	@echo ... pat1009
-	@echo ... pat1010
-	@echo ... pat1011
-	@echo ... pat1012
-	@echo ... pat1016
+	@echo ... pat1007
+	@echo ... pat_basic_level_practice
 	@echo ... edit_cache
+	@echo ... pat1001
+	@echo ... pat1013
+	@echo ... pat1014
+	@echo ... rebuild_cache
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... pat.obj
-	@echo ... pat.i
-	@echo ... pat.s
 	@echo ... pat1001.obj
 	@echo ... pat1001.i
 	@echo ... pat1001.s
-	@echo ... pat1002.obj
-	@echo ... pat1002.i
-	@echo ... pat1002.s
-	@echo ... pat1003.obj
-	@echo ... pat1003.i
-	@echo ... pat1003.s
-	@echo ... pat1004.obj
-	@echo ... pat1004.i
-	@echo ... pat1004.s
-	@echo ... pat1005.obj
-	@echo ... pat1005.i
-	@echo ... pat1005.s
-	@echo ... pat1006.obj
-	@echo ... pat1006.i
-	@echo ... pat1006.s
-	@echo ... pat1008.obj
-	@echo ... pat1008.i
-	@echo ... pat1008.s
-	@echo ... pat1009.obj
-	@echo ... pat1009.i
-	@echo ... pat1009.s
-	@echo ... pat1010.obj
-	@echo ... pat1010.i
-	@echo ... pat1010.s
-	@echo ... pat1011.obj
-	@echo ... pat1011.i
-	@echo ... pat1011.s
-	@echo ... pat1012.obj
-	@echo ... pat1012.i
-	@echo ... pat1012.s
-	@echo ... pat1016.obj
-	@echo ... pat1016.i
-	@echo ... pat1016.s
+	@echo ... pat1007.obj
+	@echo ... pat1007.i
+	@echo ... pat1007.s
+	@echo ... pat1013.obj
+	@echo ... pat1013.i
+	@echo ... pat1013.s
+	@echo ... pat1014.obj
+	@echo ... pat1014.i
+	@echo ... pat1014.s
 .PHONY : help
 
 

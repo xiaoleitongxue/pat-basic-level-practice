@@ -25,6 +25,7 @@ int main(void){
     int i=0;
     reverse(0,strLength-1,str);
     while(i<strLength){
+        //当跳出这个循环时，i指向单词结尾后的空格
         while(1){
             if(str[i]==' ' || str[i]=='\0'){
                 break;

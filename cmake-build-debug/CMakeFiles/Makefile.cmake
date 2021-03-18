@@ -48,17 +48,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/PAT.dir/DependInfo.cmake"
+  "CMakeFiles/pat1007.dir/DependInfo.cmake"
+  "CMakeFiles/pat_basic_level_practice.dir/DependInfo.cmake"
   "CMakeFiles/pat1001.dir/DependInfo.cmake"
-  "CMakeFiles/pat1002.dir/DependInfo.cmake"
-  "CMakeFiles/pat1003.dir/DependInfo.cmake"
-  "CMakeFiles/pat1004.dir/DependInfo.cmake"
-  "CMakeFiles/pat1005.dir/DependInfo.cmake"
-  "CMakeFiles/pat1006.dir/DependInfo.cmake"
-  "CMakeFiles/pat1008.dir/DependInfo.cmake"
-  "CMakeFiles/pat1009.dir/DependInfo.cmake"
-  "CMakeFiles/pat1010.dir/DependInfo.cmake"
-  "CMakeFiles/pat1011.dir/DependInfo.cmake"
-  "CMakeFiles/pat1012.dir/DependInfo.cmake"
-  "CMakeFiles/pat1016.dir/DependInfo.cmake"
+  "CMakeFiles/pat1013.dir/DependInfo.cmake"
+  "CMakeFiles/pat1014.dir/DependInfo.cmake"
   )

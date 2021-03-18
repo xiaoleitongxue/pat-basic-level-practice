@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/lilei/Documents/source/repos/PAT/pat1001.c" "C:/Users/lilei/Documents/source/repos/PAT/cmake-build-debug/CMakeFiles/pat1001.dir/pat1001.c.obj"
+  "C:/Users/lilei/Documents/source/repos/pat-basic-level-practice/pat1001.c" "C:/Users/lilei/Documents/source/repos/pat-basic-level-practice/cmake-build-debug/CMakeFiles/pat1001.dir/pat1001.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
