@@ -174,6 +174,19 @@ pat1014/fast:
 	$(MAKE) -f CMakeFiles\pat1014.dir\build.make CMakeFiles/pat1014.dir/build
 .PHONY : pat1014/fast
 
+#=============================================================================
+# Target rules for targets named pat1015
+
+# Build rule for target.
+pat1015: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 pat1015
+.PHONY : pat1015
+
+# fast build rule for target.
+pat1015/fast:
+	$(MAKE) -f CMakeFiles\pat1015.dir\build.make CMakeFiles/pat1015.dir/build
+.PHONY : pat1015/fast
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -309,6 +322,33 @@ pat1014.c.s:
 	$(MAKE) -f CMakeFiles\pat1014.dir\build.make CMakeFiles/pat1014.dir/pat1014.c.s
 .PHONY : pat1014.c.s
 
+pat1015.obj: pat1015.c.obj
+
+.PHONY : pat1015.obj
+
+# target to build an object file
+pat1015.c.obj:
+	$(MAKE) -f CMakeFiles\pat1015.dir\build.make CMakeFiles/pat1015.dir/pat1015.c.obj
+.PHONY : pat1015.c.obj
+
+pat1015.i: pat1015.c.i
+
+.PHONY : pat1015.i
+
+# target to preprocess a source file
+pat1015.c.i:
+	$(MAKE) -f CMakeFiles\pat1015.dir\build.make CMakeFiles/pat1015.dir/pat1015.c.i
+.PHONY : pat1015.c.i
+
+pat1015.s: pat1015.c.s
+
+.PHONY : pat1015.s
+
+# target to generate assembly for a file
+pat1015.c.s:
+	$(MAKE) -f CMakeFiles\pat1015.dir\build.make CMakeFiles/pat1015.dir/pat1015.c.s
+.PHONY : pat1015.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -321,6 +361,7 @@ help:
 	@echo ... pat1001
 	@echo ... pat1013
 	@echo ... pat1014
+	@echo ... pat1015
 	@echo ... rebuild_cache
 	@echo ... main.obj
 	@echo ... main.i
@@ -337,6 +378,9 @@ help:
 	@echo ... pat1014.obj
 	@echo ... pat1014.i
 	@echo ... pat1014.s
+	@echo ... pat1015.obj
+	@echo ... pat1015.i
+	@echo ... pat1015.s
 .PHONY : help
 
 

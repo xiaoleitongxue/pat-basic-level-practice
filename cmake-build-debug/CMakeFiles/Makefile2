@@ -57,6 +57,7 @@ all: CMakeFiles/pat_basic_level_practice.dir/all
 all: CMakeFiles/pat1001.dir/all
 all: CMakeFiles/pat1013.dir/all
 all: CMakeFiles/pat1014.dir/all
+all: CMakeFiles/pat1015.dir/all
 
 .PHONY : all
 
@@ -71,6 +72,7 @@ clean: CMakeFiles/pat_basic_level_practice.dir/clean
 clean: CMakeFiles/pat1001.dir/clean
 clean: CMakeFiles/pat1013.dir/clean
 clean: CMakeFiles/pat1014.dir/clean
+clean: CMakeFiles/pat1015.dir/clean
 
 .PHONY : clean
 
@@ -108,7 +110,7 @@ CMakeFiles/pat1007.dir/clean:
 CMakeFiles/pat_basic_level_practice.dir/all:
 	$(MAKE) -f CMakeFiles\pat_basic_level_practice.dir\build.make CMakeFiles/pat_basic_level_practice.dir/depend
 	$(MAKE) -f CMakeFiles\pat_basic_level_practice.dir\build.make CMakeFiles/pat_basic_level_practice.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lilei\Documents\source\repos\pat-basic-level-practice\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target pat_basic_level_practice"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lilei\Documents\source\repos\pat-basic-level-practice\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target pat_basic_level_practice"
 .PHONY : CMakeFiles/pat_basic_level_practice.dir/all
 
 # Build rule for subdir invocation for target.
@@ -208,6 +210,33 @@ pat1014: CMakeFiles/pat1014.dir/rule
 CMakeFiles/pat1014.dir/clean:
 	$(MAKE) -f CMakeFiles\pat1014.dir\build.make CMakeFiles/pat1014.dir/clean
 .PHONY : CMakeFiles/pat1014.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/pat1015.dir
+
+# All Build rule for target.
+CMakeFiles/pat1015.dir/all:
+	$(MAKE) -f CMakeFiles\pat1015.dir\build.make CMakeFiles/pat1015.dir/depend
+	$(MAKE) -f CMakeFiles\pat1015.dir\build.make CMakeFiles/pat1015.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\lilei\Documents\source\repos\pat-basic-level-practice\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target pat1015"
+.PHONY : CMakeFiles/pat1015.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pat1015.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lilei\Documents\source\repos\pat-basic-level-practice\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/pat1015.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lilei\Documents\source\repos\pat-basic-level-practice\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/pat1015.dir/rule
+
+# Convenience name for target.
+pat1015: CMakeFiles/pat1015.dir/rule
+
+.PHONY : pat1015
+
+# clean rule for target.
+CMakeFiles/pat1015.dir/clean:
+	$(MAKE) -f CMakeFiles\pat1015.dir\build.make CMakeFiles/pat1015.dir/clean
+.PHONY : CMakeFiles/pat1015.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
