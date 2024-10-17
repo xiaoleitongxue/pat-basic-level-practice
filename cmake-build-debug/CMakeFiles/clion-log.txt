@@ -1,4 +1,0 @@
-C:\Users\lilei\app\CLion-2020.1.3.win\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\lilei\Documents\source\repos\pat-basic-level-practice
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/lilei/Documents/source/repos/pat-basic-level-practice/cmake-build-debug
