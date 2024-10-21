@@ -4,3 +4,4 @@ project(pat_basic_level_practice CXX)
 
 add_subdirectory(apps/pat1001)
 add_subdirectory(apps/pat1002)
+add_subdirectory(apps/pat1003)
